@@ -15,7 +15,7 @@ function Profile() {
                         <div className="font-semibold tracking-wide text-lg lg:text-2xl xl:text-3xl text-white">
                             HI, MY NAME IS
                         </div>
-                        <div className="text-bt font-semibold   text-3xl lg:text-5xl  xl:text-6xl   w-[230px]  lg:w-[360px] xl:w-[450px] ">
+                        <div className="text-bt font-semibold   text-3xl lg:text-5xl  xl:text-6xl   w-[230px]  lg:w-[390px] xl:w-[460px] ">
                             Nimeth Nimdinu  I am a Software Developer
                         </div>
                         <div className="flex gap-5">
