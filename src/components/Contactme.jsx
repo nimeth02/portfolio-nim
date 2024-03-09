@@ -65,7 +65,7 @@ function Contactme() {
                         transition: Zoom,
 
                     });
-                    e.target.reset()
+                    form.current.reset();
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -150,7 +150,7 @@ function Contactme() {
                     placeholder='Your messsage'
                     name="yourMessage"
                 />
-                <div onClick={handleSend} className='text-white bg-bt px-4 py-2 w-[150px] rounded'>
+                <div onClick={handleSend} className='text-white bg-bt px-4 py-2 w-[150px] rounded cursor-pointer'>
                     Send Message
                 </div>
             </form>
