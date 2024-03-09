@@ -5,6 +5,7 @@ import password from '../../public/password.png'
 import chat from '../../public/chat.png'
 import home from '../../public/home.svg'
 import iphone from '../../public/iphone.svg'
+import event from '../../public/event.svg'
 function Projects() {
   return (
     <div className='mt-20' id="projects">
@@ -69,6 +70,15 @@ function Projects() {
           backendlink={"https://github.com/nimeth02/chat-max-realtime-chat-appliacation"}
           livelink={"https://chatmax-realtime.onrender.com"}
           isLive={true}
+          />
+        </div>
+        <div className=" flex flex-col md:flex-row-reverse md:pr-[20%] px-4 sm:px-20 md:gap-10 md:pl-2">
+          <ProjectCard title="Event managing application" description={"The Event Management Application simplifies event creation and management for organizers. It efficiently handles customer data, event planning, and payment tracking. The application uses microservices architecture, with separate services for managing events, customers, and payments. These services communicate through a message broker like RabbitMQ, orchestrated by a reverse proxy server."} 
+          image={event}
+          frontend={""}
+          backend={"nodejs , express js, microservice architecture,rabbitmq,nginx"}
+          frontendlink={""}
+          backendlink={"https://github.com/nimeth02/event-managing-microservice"}
           />
         </div>
       </div>
