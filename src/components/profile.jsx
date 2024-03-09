@@ -6,14 +6,14 @@ import { Typography } from '@material-tailwind/react'
 function Profile() {
     return (
         <div>
-            <div className="lg:mt-10">
+            <div className="lg:mt-20">
                 <div className="flex flex-col md:flex-row-reverse justify-between 2xl:pr-40 items-center">
                     <div className="flex justify-center ">
                         <Image alt="Image P1" src={profile} className="h-[300px] md:h-[500px]" />
                     </div>
                     <div className="flex flex-col gap-4 lg:gap-10 p-4">
                         <div className="font-semibold tracking-wide text-lg lg:text-2xl xl:text-3xl text-white">
-                            HI, MY NAME IS
+                            HI, MY NAME IS,
                         </div>
                         <div className="text-bt font-semibold   text-3xl lg:text-5xl  xl:text-6xl   w-[230px]  lg:w-[390px] xl:w-[460px]">
                             <div className=' w-[230px]  lg:w-[390px] xl:w-[560px]'>Nimeth Nimdinu </div>
