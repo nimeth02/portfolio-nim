@@ -12,12 +12,12 @@ function Profile() {
                         <Image alt="Image P1" src={profile} className="h-[300px] md:h-[500px]" />
                     </div>
                     <div className="flex flex-col gap-4 lg:gap-10 p-4">
-                        <div className="font-semibold tracking-wide text-lg lg:text-2xl xl:text-3xl text-white">
+                        <div className="font-semibold tracking-wide text-lg lg:text-2xl xl:text-3xl ">
                             HI, MY NAME IS
                         </div>
-                        <div className="text-bt font-semibold   text-3xl lg:text-5xl  xl:text-6xl   w-[230px]  lg:w-[390px] xl:w-[460px]">
-                            <div className=' w-[230px]  lg:w-[390px] xl:w-[560px]'>Nimeth Nimdinu </div>
-                            <div className=' w-[230px]  lg:w-[390px] xl:w-[460px]'>I am a Software Developer</div> 
+                        <div className="font-semibold   text-3xl lg:text-5xl  xl:text-6xl   w-[230px]  lg:w-[390px] xl:w-[460px]">
+                            <div className=' text-bt  w-[230px]  lg:w-[390px] xl:w-[560px]'>Nimeth Nimdinu </div>
+                            <div className='text-bt  w-[250px]  lg:w-[420px] xl:w-[490px]'>I am a Software Developer</div> 
                         </div>
                         <div className="flex gap-5">
                             <div className=" h-[10px] lg:h-[15px] w-[200%]  bg-gradient-to-r from-cyan-500 to-blue-500  rounded drop-shadow-[0px_0px_5px_rgba(255,255,255,0.6)]" ></div>

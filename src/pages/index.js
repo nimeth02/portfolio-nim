@@ -16,12 +16,16 @@ export default function Home() {
   return (
     <div >
 <NavbarC />
-<div className="bg-bg p-4 md:p-6">
+
 <Profile/>
+<div className="bg-bg2  p-4 md:p-6">
 <Projects />
+</div>
 <Git/>
 <Technology/>
+
 <Aboutme />
+<div className="bg-bg2  p-4 md:p-6">
 <Contactme />
 </div>
     </div>
