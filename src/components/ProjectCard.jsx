@@ -4,33 +4,32 @@ import gitlogo from '../../public/gitlogo.svg'
 import styles from './productcard.module.css';
 import Link from 'next/link'
 
-function ProjectCard({image, title, description, isLive, frontend, backend, frontendlink, backendlink, livelink }) {
+function ProjectCard({ image, title, description, isLive, frontend, backend, frontendlink, backendlink, livelink }) {
     return (
         <>
-            {/* <div className=' flex flex-col md:flex-row px-4 sm:px-20 md:gap-10'> */}
-            <div className='   md:w-[800px] rounded-lg flex items-center justify-center  bg-gray-600'>
-                <Image alt="Image G" src={image} className=' rounded '/>
-            </div>
-            <div className='bg-[rgb(138,132,128,0.6)] transparent text-white  p-4 text-justify rounded drop-shadow-[0px_0px_10px_rgba(11,140,205,0.5)] flex flex-col justify-between gap-10'>
-                <div className='font-bold text-xl'>{title}</div>
-                {description}
-                <div className='pl-6'>
-                    <ul className="list-disc">
-
-                        <li>frontend - {frontend}</li>
-
-                        <li>backend - {backend}</li>
-                    </ul>
+            <div className=' flex flex-col  px-4 sm:px-20 '>
+                <div className=' w-[300px] border-2 border-black rounded-lg flex items-center  bg-gray-600'>
+                    <Image alt="Image G" src={image} className=' rounded w-[300px] h-[150px] ' />
                 </div>
+                <div className='px-2 border-2 border-black w-[300px] bg-[rgb(255,255,255)] transparent   p-4 text-justify rounded  flex flex-col justify-between gap-10'>
+                    <div className=' h-[30px]  font-bold text-md text-center'>{title}</div>
+                    <div className=' h-[200px]  justify-center text-sm '>{description}</div>
 
-                <div className='flex items-center gap-5 flex-col sm:flex-row'>
+                    <div className='pl-6 h-[100px] pt-4'>
+                        <ul className="list-disc">
 
-                    {isLive && <Link className='flex items-center text-bt font-semibold' href={livelink || " "}>
-                        <div className='underline'>Live</div>
-                        <div className={`w-4 h-4 rounded-full bg-bt ${styles['animate-pulse']} mx-2`}>
+                            <Link className='flex items-center gap-2 ' href={frontendlink || " "}>
+                                <li className=''><div className='flex gap-1'><div className='underline'>frontend</div><div>-</div> <div className='text-left'> {frontend}</div></div></li>
+                            </Link>
+                            <Link className='flex items-center gap-2' href={backendlink || " "}>
+                                <li><div className='flex gap-1 '><div className='underline '>backend</div><div>-</div> <div className='text-left'>{backend}</div></div></li>
+                            </Link>
+                        </ul>
+                    </div>
 
-                        </div>
-                    </Link>}
+                    {/* <div className='flex items-center gap-5 flex-col sm:flex-row'>
+
+                  
 
                     <Link className='flex items-center gap-2' href={frontendlink || " "}>
                         <div className='underline'>frontend</div>
@@ -42,13 +41,20 @@ function ProjectCard({image, title, description, isLive, frontend, backend, fron
                         <Image alt="Image G" src={gitlogo} className='h-8 w-8 ' />
 
                     </Link>
+                </div> */}
+                    <div className='h-[20px]'>
+                        {isLive && <Link className='flex items-center text-bt font-semibold' href={livelink || " "}>
+                            <div className='underline'>Live</div>
+                            <div className={`w-4 h-4 rounded-full bg-bt ${styles['animate-pulse']} mx-2`}>
+
+                            </div>
+                        </Link>}
+                    </div>
+
+
                 </div>
 
-
-
             </div>
-
-            {/* </div> */}
         </>
     )
 }
