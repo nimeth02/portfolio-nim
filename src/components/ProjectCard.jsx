@@ -7,12 +7,12 @@ import Link from 'next/link'
 function ProjectCard({ image, title, description, isLive, frontend, backend, frontendlink, backendlink, livelink }) {
     return (
         <>
-            <div className=' flex flex-col  px-4 sm:px-20 '>
-                <div className=' w-[300px] border-2 border-black rounded-lg flex items-center  bg-gray-600'>
-                    <Image alt="Image G" src={image} className=' rounded w-[300px] h-[150px] ' />
+            <div className='  rounded-xl flex flex-col  bg-[#f5f5f5] opacity-80  drop-shadow-[0px_0px_10px_rgba(205,205,205,0.5)] hover:scale-105 duration-150'>
+                <div className='rounded-xl   flex items-center  bg-gray-600'>
+                    <Image alt="Image G" src={image} className=' flex justify-center text-center rounded w-[400px] h-[200px] ' />
                 </div>
-                <div className='px-2 border-2 border-black w-[300px] bg-[rgb(255,255,255)] transparent   p-4 text-justify rounded  flex flex-col justify-between gap-10'>
-                    <div className=' h-[30px]  font-bold text-md text-center'>{title}</div>
+                <div className='px-4    transparent   p-4 text-justify rounded  flex flex-col justify-between gap-10'>
+                    <div className=' h-[30px] text-bt font-bold text-md text-center'>{title}</div>
                     <div className=' h-[200px]  justify-center text-sm '>{description}</div>
 
                     <div className='pl-6 h-[100px] pt-4'>
