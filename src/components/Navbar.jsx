@@ -8,22 +8,24 @@ function Navbar() {
 
   const [open, setOpen] = useState(false);
   return (
-    <div className='h-[80px] xl:h-[100px] fixed top-0 w-full z-10 bg-bg flex items-center  justify-between md:gap-[20%] xl:gap-[30%] px-4'>
-      <Image
+    <div className='z-[999] h-[80px] xl:h-[100px] fixed top-0 w-full z-10 bg-bg flex items-center  justify-between md:gap-[20%] xl:gap-[30%] px-4 bg-transparent'>
+      {/* <Image
         src={logo}
         className='h-[25px] lg:h-[30px] xl:h-[50px]'
         alt="Image N1"
-      />
-      <div className=' text-white flex-1  gap-[6%] lg:gap-[8%] hidden md:flex'>
+      /> */}
+      <div className='  text-black flex-1  gap-[6%] lg:gap-[8%] hidden md:flex md:justify-center md:bg-bg2 md:rounded-lg md:py-2 mx-60'>
 
-
-        <Link className=' text-lg lg:text-xl xl:text-2xl ' href="#projects">
+      <Link className=' text-lg lg:text-xl xl:text-xl ' href="#home">
+          Home
+        </Link>
+        <Link className=' text-lg lg:text-xl xl:text-xl ' href="#projects">
           Projects
         </Link>
-        <Link className='text-lg lg:text-xl xl:text-2xl' href="#technology">
+        <Link className='text-lg lg:text-xl xl:text-xl' href="#technology">
           Technologies
         </Link>
-        <Link className='text-lg lg:text-xl xl:text-2xl' href="#contactme">
+        <Link className='text-lg lg:text-xl xl:text-xl' href="#contactme">
           Contact me
         </Link>
       </div>

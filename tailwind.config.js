@@ -17,7 +17,20 @@ module.exports = withMT({
         "bg":"#ffffff",
         "bg2":"rgb(224 242 254)",
         "bt":"#00A3FF"
-      }
+      },
+      animation: {
+        "text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
+      },
+      keyframes: {
+        "text-reveal": {
+          "0%": {
+            transform: "translate(0, 100%)",
+          },
+          "100%": {
+            transform: "translate(0, 0)",
+          },
+        },
+      },
     },
   },
   plugins: [],
