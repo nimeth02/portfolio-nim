@@ -34,7 +34,7 @@ function Welcome() {
                             </span>
                         ))}
                     </div>
-                    <div className=' animate-fade-in text-gray-600 text-2xl'>Backend developer | Machine learning Engineer</div>
+                    <div className=' animate-fade-in text-gray-600 text-2xl'>Backend developer | Machine learning developer</div>
                     <div className='mt-10 text-justify'>
                         I am an undergraduate from the Faculty of Information Technology at the
                         University of Moratuwa, focusing on machine learning and backend
