@@ -1,5 +1,4 @@
 import React from 'react'
-import profile from '../../public/profile.svg'
 import Image from 'next/image'
 import { Typography } from '@material-tailwind/react'
 
@@ -9,7 +8,7 @@ function Profile() {
             <div className="lg:mt-20">
                 <div className="flex flex-col md:flex-row-reverse justify-between 2xl:pr-40 items-center">
                     <div className="flex justify-center ">
-                        <Image alt="Image P1" src={profile} className="h-[300px] md:h-[500px]" />
+                        <Image alt="Image P1" src="https://github.com/nimeth02.png" className="h-[300px] md:h-[500px]" />
                     </div>
                     <div className="flex flex-col gap-4 lg:gap-10 p-4">
                         <div className="font-semibold tracking-wide text-lg lg:text-2xl xl:text-3xl ">
