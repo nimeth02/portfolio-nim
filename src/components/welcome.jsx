@@ -1,5 +1,4 @@
 import React from 'react'
-import welcome from '../../public/welcome.png'
 import Image from 'next/image'
 import { Typography } from '@material-tailwind/react'
 import Link from 'next/link'
@@ -13,7 +12,7 @@ function Welcome() {
             
             <div className="flex gap-20 " id="home">
                 <div className='relative flex-2 items-center  '>
-                    <Image alt="Image P1" src={welcome} className="z-10 border-2 border-bg absolute bottom right-4 flex-1   bg-bg2 rounded-full  h-[300px] w-[300px] " />
+                    <Image alt="Image P1" src="https://github.com/nimeth02.png" className="z-10 border-2 border-bg absolute bottom right-4 flex-1   bg-bg2 rounded-full  h-[300px] w-[300px] " />
                     <div className=' bg-bt h-[300px] w-[300px] rounded-full'></div>
                     {/* <div className="relative w-[300px] h-[300px]">
                         <div className="triangle  absolute bottom-0 left-1/2 transform -translate-x-1/2"></div>
