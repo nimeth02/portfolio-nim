@@ -10,8 +10,8 @@ function Git() {
                     nimeth02
                 </Link>
                 <div className="flex gap-5">
-                    <div className=" w-[150px] md:w-[250px] lg:w-[350px] h-[10px] lg:h-[15px] bg-gradient-to-r from-cyan-500 to-blue-500  rounded drop-shadow-[0px_0px_5px_rgba(255,255,255,0.6)]" ></div>
-                    <div className=" w-[20px] h-[10px] lg:h-[15px]   bg-gradient-to-r from-cyan-500 to-blue-500  rounded drop-shadow-[0px_0px_5px_rgba(255,255,255,0.6)]" ></div>
+                    <div className=" w-[150px] md:w-[250px] lg:w-[350px] h-[10px] lg:h-[15px] bg-gradient-to-r from-green-400 to-green-600  rounded drop-shadow-[0px_0px_5px_rgba(255,255,255,0.6)]" ></div>
+                    <div className=" w-[20px] h-[10px] lg:h-[15px]   bg-gradient-to-r from-green-400 to-green-600  rounded drop-shadow-[0px_0px_5px_rgba(255,255,255,0.6)]" ></div>
 
                 </div>
             </div>
