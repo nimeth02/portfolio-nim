@@ -1,47 +1,21 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import { Button, Typography } from "@material-tailwind/react";
-import NavbarC from "@/components/Navbar";
-import Me from '../../public/Me.svg'
-import Gradient from '../../public/Gradient.svg'
-
-import Profile from "@/components/profile";
-import Projects from "@/components/Projects";
-import Technology from "@/components/Technology";
-import Git from "@/components/Git";
-import Aboutme from "@/components/Aboutme";
-import Contactme from "@/components/Contactme";
-import Welcome from "@/components/welcome";
+import ModernNavbar from "@/components/ModernNavbar";
+import Hero from "@/components/Hero";
+import ModernAbout from "@/components/ModernAbout";
+import ModernProjects from "@/components/ModernProjects";
+import ModernSkills from "@/components/ModernSkills";
+import ModernContact from "@/components/ModernContact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="area">
-      <ul className="circles">
-        <li className="rounded-full"></li>
-        <li className=""></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-       </ul>
-      <NavbarC />
-      <div className="bg-bg  p-4 md:p-6">
-        <Welcome />
-
-        <Projects />
-      </div>
-      {/* <Git/> */}
-      <Technology />
-
-      <Aboutme />
-      <div className="  p-4 md:p-6">
-        <Contactme />
-      </div>
-     
+    <div className="min-h-screen bg-white">
+      <ModernNavbar />
+      <Hero />
+      <ModernAbout />
+      <ModernProjects />
+      <ModernSkills />
+      <ModernContact />
+      <Footer />
     </div>
-  );
+  )
 }
